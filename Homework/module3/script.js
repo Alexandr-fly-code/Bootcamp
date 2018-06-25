@@ -51,7 +51,7 @@ const logins = ["Mango", "robotGoogles", "Poly", "Aj4x1sBozz", "qwerty123"];
 let login = prompt('Введите логин');
 
 function checkLoginValidity(login) {
-    return login.length < 4 || login.length > 16 ? false : true;
+    return login.length < 4 && login.length > 16 ? false : true;
 }
 
 console.log(checkLoginValidity(login));
