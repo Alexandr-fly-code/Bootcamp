@@ -200,9 +200,10 @@ mass = ['Made as a <a href="https://www.freecodecamp.com/" target="_blank">CodeC
 for (let i = 0; i < mass.length; i++){
     const liiii = document.createElement('li');
     liiii.innerHTML = mass[i];
-    ulFooter.append(liiii);
+    frag.append(liiii);
 };
 
+ulFooter.append(frag);
 
 
 
