@@ -206,20 +206,3 @@ for (let i = 0; i < mass.length; i++){
 
 
 
-
-// const rowFooterLast = document.createElement('div');
-// const colMd6 = document.createElement('div');
-// const pSmall = document.createElement('p');
-// const colMd6Last = document.createElement('div');
-// const ulFooter = document.createElement('ul');
-
-
-// const colLs6 = document.createElement('div');
-// const blockquote = document.createElement('blockquote');
-// const pFooter = document.createElement('p');
-// const firstFooter = document.createElement('footer');
-// const citeFooterFirst = document.createElement('cite');
-
-// ulListContainer.append(frag);
-// h1.insertAdjacentElement('afterend', p);
-// p.insertAdjacentElement('afterbegin', span);
