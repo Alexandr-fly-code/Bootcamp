@@ -1,19 +1,3 @@
-// let enemy = [];
-//
-// for (let i = 100; i < 250; i+=75){
-//     for (let k = 25; k < 1000; k+=100){
-//         // console.log({k}, {i});
-//         let obj = {
-//             left: k,
-//             top: i,
-//         };
-//
-//         enemy.push(obj);
-//
-//     }
-// }
-//
-// console.log(enemy);
 
 
 class Hamburger {
