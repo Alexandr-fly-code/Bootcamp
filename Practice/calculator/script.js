@@ -344,40 +344,40 @@
 // 5) Для студента додати метод getCourse() що показує курс на якому навчається зараз студент (від поточного року відняти рік вступу)
 // 6) Додати студенту метод getFullInfo() який бере інформацію з батьківського метода getFullName() і свого getCourse() і виводить її на екран
 
-class User {
-    constructor(name, surname) {
-        this._name = name;
-        this._surname = surname;
-    }
-
-    getFullName() {
-        // console.log(`Имя ${this._name} Фамилия ${this._surname}`);
-        return `Имя ${this._name} Фамилия ${this._surname}`
-    }
-
-}
-
-class Student extends User {
-    constructor(name, surname, yearIn) {
-        super(name, surname);
-        this._yearIn = yearIn;
-    }
-
-    getCourse() {
-        return 2018 - this._yearIn;
-    }
-
-    getFullInfo() {
-        return `${super.getFullName()} и ${this.getCourse()}`
-    }
-}
-
-
-const user = new User('Alex', 'Ivanov');
-
-user.getFullName();
-
-const student = new Student('Alexndr', 'Vasil', 1997);
-// console.log(student);
-// student.getCourse();
-console.log(student.getFullInfo());
+// class User {
+//     constructor(name, surname) {
+//         this._name = name;
+//         this._surname = surname;
+//     }
+//
+//     getFullName() {
+//         // console.log(`Имя ${this._name} Фамилия ${this._surname}`);
+//         return `Имя ${this._name} Фамилия ${this._surname}`
+//     }
+//
+// }
+//
+// class Student extends User {
+//     constructor(name, surname, yearIn) {
+//         super(name, surname);
+//         this._yearIn = yearIn;
+//     }
+//
+//     getCourse() {
+//         return 2018 - this._yearIn;
+//     }
+//
+//     getFullInfo() {
+//         return `${super.getFullName()} и ${this.getCourse()}`
+//     }
+// }
+//
+//
+// const user = new User('Alex', 'Ivanov');
+//
+// user.getFullName();
+//
+// const student = new Student('Alexndr', 'Vasil', 1997);
+// // console.log(student);
+// // student.getCourse();
+// console.log(student.getFullInfo());
