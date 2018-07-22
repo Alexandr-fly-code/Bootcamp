@@ -1,52 +1,6 @@
-// fetch('https://test-users-api.herokuapp.com/users', {
-//     method: 'POST',
-//     body: JSON.stringify({ name: "NEW", age: 12}),
-//     headers: {
-//         Accept: 'application/json',
-//         'Content-Type': 'application/json',
-//     }
-// })
-// .then(el => console.log(el))
+
 const users = 'https://test-users-api.herokuapp.com/users/';
 const getId = 'https://test-users-api.herokuapp.com/users/';
-//
-// fetch('https://test-users-api.herokuapp.com/users', {
-//     method: 'POST',
-//     body: JSON.stringify({ name: "NEW", age: 13}),
-//     headers: {
-//         Accept: 'application/json',
-//         'Content-Type': 'application/json',
-//     }
-// })
-//     .then(el => {
-//         if (el.ok){
-//             return el.json()
-//         }
-//     })
-//     .then(el => console.log(el.data))
-
-
-// fetch('https://test-users-api.herokuapp.com/users', {
-//     method: 'DELETE',
-//     body: JSON.stringify({ name: "NEW", age: 13}),
-//     headers: {
-//         Accept: 'application/json',
-//         'Content-Type': 'application/json',
-//     }
-// })
-//     .then(el => {
-//         if (el.ok){
-//             return el.json()
-//         }
-//     })
-//     .then(el => console.log(el.data))
-
-
-// fetch('https://test-users-api.herokuapp.com/users', {
-//     method: 'DELETE'
-// }).then(() => console.log('success'))
-//     .catch(error => console.log('ERROR' + error));
-//
 
 //Начало
 
@@ -65,7 +19,6 @@ function getAllUsers() {
 //
 
 //Получить ID
-// const searchInId = prompt('Введите id');
 const idSearch = document.querySelector('.id-search');
 
 function getUserById(id) {
@@ -78,13 +31,10 @@ function getUserById(id) {
         .then(el => el.data)
         .then(el => el.find(item => item.id === idSearch.value))
         .then(el => console.log(el));
-    // return id.find(item => item.id === searchInId);
 }
-//
-// getUserById();
-// //------------------------------------------------
-//
-//
+
+//------------------------------------------------
+
 // //Начало
 function addUser(name, age) {
     const obj = {
@@ -112,14 +62,6 @@ function addUser(name, age) {
 
 //
 // //------------------------------------------------
-//
-//
-// // function removeUser(id) {
-// //
-// // }
-// const userDelete = prompt('Введите id для удаления с бд')
-
-
 
 function deletedUser(deleted) {
     fetch(`https://test-users-api.herokuapp.com/users/${deleted}`, {
@@ -128,20 +70,6 @@ function deletedUser(deleted) {
         .catch(error => console.log('ERROR' + error));
 }
 //Конец
-//
-// const id = 12;
-// fetch(`https://test-users-api.herokuapp.com/users/${searchInId}`)
-//     .then(el => {
-//         if (el.ok) {
-//             return el.json()
-//         }
-//     })
-//     .then(el => console.log(el))
-
-// addUser(name, age
-
-
-
 function userUpdates(name, age) {
     const postToUpdate = {
         name: name,
@@ -158,11 +86,6 @@ function userUpdates(name, age) {
         .then(data => console.log(data))
         .catch(error => console.log('ERROR' + error));
 }
-
-// const id = document.querySelector('#author');
-
-// const idUsers = document.querySelector('#comment');
-// console.log(idUsers);
 
 //Кнопка для получения всего списка users
 const btn = document.querySelector('.get-users');
